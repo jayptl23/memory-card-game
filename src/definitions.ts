@@ -1,4 +1,5 @@
 export type TCard = {
   id: number,
-  title: string
+  title: string,
+  clicked: boolean
 }
