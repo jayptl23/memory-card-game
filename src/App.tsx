@@ -11,25 +11,28 @@ const App = () => {
 
 	const updateGameState = (card: TCard) => {
 		const alreadyClicked: boolean = card.clicked
-		if (!alreadyClicked) {
-			setScore(prevScore => prevScore + 1)
-			let newCards = cards.filter(theCard => theCard.id !== card.id)
-			newCards = [...newCards, {...card, clicked: true}]
-			setCards(newCards)
-		} else {
-			if (score > bestScore) {
-				setBestScore(score)
-			}
-			setScore(0)
-			setCards([...cardsData])
-			console.log('shuffling cards...')
-			const temp: TCard = cards[0]
-			cards[0] = cards[cards.length - 1]
-			cards[cards.length - 1] = temp
-		}
+		alreadyClicked ? restartGame() : continueGame(card)
 	}
 
-	const handleCardClick = (e: any) => console.log(e.target)
+	// Helpers
+	const continueGame = (card: TCard) => {
+		setScore(prevScore => prevScore + 1)
+		let newCards = cards.filter(theCard => theCard.id !== card.id)
+		newCards = [...newCards, {...card, clicked: true}]
+		setCards(newCards)
+	}
+
+	const restartGame = () => {
+		if (score > bestScore) {
+			setBestScore(score)
+		}
+		setScore(0)
+		setCards([...cardsData])
+		console.log('shuffling cards...')
+		const temp: TCard = cards[0]
+		cards[0] = cards[cards.length - 1]
+		cards[cards.length - 1] = temp
+	}
 
 	return (
 		<div className='App'>
