@@ -1,4 +1,3 @@
-// import {useState} from 'react'
 import {TCard} from '../definitions'
 
 interface IProps {
@@ -7,17 +6,11 @@ interface IProps {
 }
 
 const Card = ({details, updateGameState}: IProps) => {
-	const {id, title, clicked} = details
-
-	// const [clicked, setClicked] = useState<boolean>(false)
-
-	const handleClick = () => {
-		console.log('card click')
-		updateGameState(details)
-	}
+	const {title} = details
 
 	return (
-		<div onClick={handleClick}>
+		<div onClick={() => updateGameState(details)}>
+			{details.img && <img src={details.img} width='300px' height='300px' style={{objectFit: 'cover'}} />}
 			<p>{title}</p>
 		</div>
 	)
