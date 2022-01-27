@@ -35,7 +35,7 @@ const App = () => {
 	}
 
 	return (
-		<div className='App'>
+		<div className='app'>
 			<Header score={score} bestScore={bestScore} />
 			<div className='grid'>
 				{cards.map((card: TCard) => (

@@ -6,22 +6,39 @@
 
 body {
 	font-family: 'Source Serif Pro', serif;
-	background-color: #bac8c9;
+	/* background-color: #bac8c9; */
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url('./images/small-heath.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 header {
-	color: #192e41;
+	/* color: #192e41; */
+	/* color: white; */
+	color: #ffd08e;
+	width: 40vw;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 20px;
+}
+
+.score {
+	font-weight: 600;
+	margin-left: auto;
 }
 
 .grid {
-	/* display: grid;
-	grid-template-columns: repeat(6, 200px);
+	display: grid;
+	grid-template-columns: repeat(3, min-content);
 	grid-template-rows: repeat(3, 1fr);
-	gap: 5px; */
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: center;
+	gap: 5px;
+	/* background-color: hotpink; */
 }
 
 .card {
@@ -40,4 +57,10 @@ header {
 	width: 200px;
 	height: 200px;
 	object-fit: cover;
+	border-radius: 2px 2px;
 }
+
+/* .card:hover {
+	transform: scale(1.05);
+	margin: 10px;
+} */
