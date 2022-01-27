@@ -3,3 +3,41 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+body {
+	font-family: 'Source Serif Pro', serif;
+	background-color: #bac8c9;
+}
+
+header {
+	color: #192e41;
+}
+
+.grid {
+	/* display: grid;
+	grid-template-columns: repeat(6, 200px);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 5px; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.card {
+	background-color: #41636c;
+	border-radius: 5px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	letter-spacing: 1px;
+	font-weight: 600;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.card > img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}

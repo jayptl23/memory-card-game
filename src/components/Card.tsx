@@ -9,8 +9,8 @@ const Card = ({details, updateGameState}: IProps) => {
 	const {title} = details
 
 	return (
-		<div onClick={() => updateGameState(details)}>
-			{details.img && <img src={details.img} width='300px' height='300px' style={{objectFit: 'cover'}} />}
+		<div className='card' onClick={() => updateGameState(details)}>
+			{details.img && <img src={details.img} />}
 			<p>{title}</p>
 		</div>
 	)
