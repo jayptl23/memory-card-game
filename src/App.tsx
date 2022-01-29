@@ -8,7 +8,7 @@ import {shuffle} from './utils'
 const App = () => {
 	const [score, setScore] = useState<number>(0)
 	const [bestScore, setBestScore] = useState<number>(0)
-	const [cards, setCards] = useState<TCard[]>([...cardsData])
+	const [cards, setCards] = useState<TCard[]>(shuffle([...cardsData]))
 
 	const updateGameState = (card: TCard) => {
 		const alreadyClicked: boolean = card.clicked
