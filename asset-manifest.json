@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/memory-card-game/static/css/main.eb5f2543.css",
+    "main.js": "/memory-card-game/static/js/main.3cbf220a.js",
+    "static/media/polly.png": "/memory-card-game/static/media/polly.eec46764e6141ab87a1c.png",
+    "static/media/ada-thorne.jpg": "/memory-card-game/static/media/ada-thorne.298f365533c29362cc6b.jpg",
+    "static/media/finn-shelby.jpg": "/memory-card-game/static/media/finn-shelby.44cf6078b63906a0f042.jpg",
+    "static/media/arthur-shelby.jpg": "/memory-card-game/static/media/arthur-shelby.6e61556b852cfc9e20cf.jpg",
+    "static/media/john-shelby.jpg": "/memory-card-game/static/media/john-shelby.1e67f9751ca84d130533.jpg",
+    "static/media/lizzie-stark.jpg": "/memory-card-game/static/media/lizzie-stark.18246d5e9ed311d8a3cb.jpg",
+    "static/media/small-heath.jpg": "/memory-card-game/static/media/small-heath.5933187062c59183cc47.jpg",
+    "static/media/alfie-solomons.jpg": "/memory-card-game/static/media/alfie-solomons.5962df9384208024a75e.jpg",
+    "static/media/michael-gray.jpg": "/memory-card-game/static/media/michael-gray.fe2fb9115f424c844716.jpg",
+    "static/media/thomas-shelby.jpg": "/memory-card-game/static/media/thomas-shelby.fab8908118f27c5fca67.jpg",
+    "index.html": "/memory-card-game/index.html",
+    "main.eb5f2543.css.map": "/memory-card-game/static/css/main.eb5f2543.css.map",
+    "main.3cbf220a.js.map": "/memory-card-game/static/js/main.3cbf220a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb5f2543.css",
+    "static/js/main.3cbf220a.js"
+  ]
+}
