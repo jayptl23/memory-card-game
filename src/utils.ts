@@ -1,7 +1,6 @@
 import { TCard } from "./definitions";
 
 export const shuffle = (array: TCard[]) => {
-  console.log('inside shuffle!')
   let currentIndex = array.length,  randomIndex;
 
   // While there remain elements to shuffle...
